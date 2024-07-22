@@ -24,8 +24,8 @@ const userModel = require("./models/user");
 const mongoSanitize = require("express-mongo-sanitize");
 const mongoStore = require("connect-mongo");//this is necessary for production phase
 
-//const dbUrl = process.env.DB_URL;
-const dbUrl = "mongodb://localhost:27017/aventurate";
+const dbUrl = process.env.DB_URL;
+//const dbUrl = "mongodb://localhost:27017/aventurate";
 //"mongodb://localhost:27017/aventurate" localhost
 mongoose.connect(dbUrl)
 .then(()=>{
